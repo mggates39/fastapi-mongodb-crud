@@ -1,4 +1,3 @@
-
 def studentEntity(db_item) -> dict:
     return {
         "id": str(db_item["_id"]),
@@ -6,6 +5,7 @@ def studentEntity(db_item) -> dict:
         "email": db_item['student_email'],
         "phone": db_item['student_phone']
     }
+
 
 def listOfStudentEntities(list_db_items) -> list:
     list_student_entities = []
